@@ -100,7 +100,7 @@ int main()
     
     al_flip_display();
     int personagem;
-    while (!begin_game) {
+    while (!begin_game && !quit) {
         ALLEGRO_EVENT e;
         al_wait_for_event(event_queue, &e);
         if(e.type == ALLEGRO_EVENT_KEY_DOWN) {
@@ -125,12 +125,15 @@ int main()
                     personagem=5;
                     begin_game=true;
                     break;
+                    case ALLEGRO_KEY_ESCAPE:
+                    quit=true;
+                    break;
             }
         
         }
         if (e.type==ALLEGRO_EVENT_DISPLAY_CLOSE) {
             quit=true;
-            // begin_game=true;
+            begin_game=true;
             break;
         }
     
