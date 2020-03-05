@@ -40,7 +40,7 @@ int main()
     ALLEGRO_TIMER *timer = NULL;
     ALLEGRO_BITMAP *car[10], *frog=NULL, *fundo=NULL, *img1=NULL, *img2=NULL, *img3=NULL, *img4=NULL, *img5=NULL;
     
-    bool quit = false, quit_=false, sair=false, colisao=false, redraw, win=false;
+    bool quit = false, begin_game=false, sair=false, colisao=false, redraw, win=false;
     int conta;
     float tempo = 0;
     int p=1;
@@ -100,37 +100,37 @@ int main()
     
     al_flip_display();
     int personagem;
-    while (!quit_) {
+    while (!begin_game) {
         ALLEGRO_EVENT e;
         al_wait_for_event(event_queue, &e);
         if(e.type == ALLEGRO_EVENT_KEY_DOWN) {
             switch(e.keyboard.keycode){
                     case ALLEGRO_KEY_T:
                     personagem=1;
-                    quit_=true;
+                    begin_game=true;
                     break;
                     case ALLEGRO_KEY_K:
                     personagem=2;
-                    quit_=true;
+                    begin_game=true;
                     break;
                     case ALLEGRO_KEY_J:
                     personagem=3;
-                    quit_=true;
+                    begin_game=true;
                     break;
                     case ALLEGRO_KEY_L:
                     personagem=4;
-                    quit_=true;
+                    begin_game=true;
                     break;
                     case ALLEGRO_KEY_D:
                     personagem=5;
-                    quit_=true;
+                    begin_game=true;
                     break;
             }
         
         }
         if (e.type==ALLEGRO_EVENT_DISPLAY_CLOSE) {
             quit=true;
-            quit_=true;
+            // begin_game=true;
             break;
         }
     
@@ -206,6 +206,10 @@ int main()
                         case ALLEGRO_KEY_S:
                         quit=false;
                         colisao=false;
+                        key[KEY_UP] = false;
+                        key[KEY_DOWN] = false;
+                        key[KEY_RIGHT] = false;
+                        key[KEY_LEFT] = false;
                         p=1;
                         al_set_target_bitmap(al_get_backbuffer(display));
                         al_clear_to_color(al_map_rgb(0, 0, 0));
