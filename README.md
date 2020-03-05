@@ -51,6 +51,17 @@ It should be noted that, although these steps should work on any platform, this 
 
 As soon as you start the game, you should be directed to a character selection screen. You will have five different possible playable characters to choose from. Simple press the letter that is to the right of your chosen character's name and the game will start.
 
-![GitHub Logo](prints/init_screen.png)
-Format: ![Alt Text](prints/init_screen.png)
+![init_screen](prints/init_screen.png)
 
+## Playing the game
+
+After choosing your character, the game will start. The playable character will be at the bottom of the screen and there should be ten zombies running horizontally at random speeds throughout the rest of the screen. 
+
+![game_screen](prints/game_screen.png)
+
+The objective of the game is to get your character to the top of the screen without colliding with any zombies. You can use both the WASD keys or the arrow keys of your keyboard to control your character.
+
+Should you manage to get to the top, you will move to the next level, where the average speed of the zombies will have increased slightly.
+
+
+![lost_screen](prints/lost_screen.png)
