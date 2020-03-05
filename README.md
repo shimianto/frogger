@@ -14,12 +14,12 @@ These instructions will get you a copy of the project up and running on your loc
 To run the game in your local machine, you will need only a C compiler and the [Allegro](https://www.allegro.cc) 
 library installed in your computer.
 
-Instructions to install the Allegro library can be found at: [https://www.allegro.cc](https://www.allegro.cc) 
+Instructions on how to install the Allegro library can be found at: [https://www.allegro.cc](https://www.allegro.cc) 
 
 ### Compiling and running the game
 
-After the *Allegro* library is installed, clone the repository to your local machine. Open the *Terminal* (MacOS)
-or the *Command Prompt* (Windows) at the cloned folder and run the following command:
+After the *Allegro* library is installed, clone the repository to your local machine. Open the **Terminal** (MacOS)
+or the **Command Prompt** (Windows) at the cloned folder and run the following command:
 
 ```
 gcc -o frogger main.c -lallegro -lallegro_main -lallegro_image -lallegro_font -lallegro_ttf -lallegro_primitives -lallegro_audio -lallegro_acodec
@@ -46,6 +46,7 @@ It should be noted that, although these steps should work on any platform, this 
 * **Arthur de Senna Rocha** - [asrocha95](https://github.com/asrocha95)
 
 # How to play
+This section consists of a basic walk-trough the game and its basic commands.
 
 ## Choosing your character
 
@@ -59,9 +60,12 @@ After choosing your character, the game will start. The playable character will 
 
 ![game_screen](prints/game_screen.png)
 
-The objective of the game is to get your character to the top of the screen without colliding with any zombies. You can use both the WASD keys or the arrow keys of your keyboard to control your character.
+The objective of the game is to get your character to the top of the screen without colliding with any zombies. You can use both the **WASD** keys or the **arrow keys** of your keyboard to control your character.
 
 Should you manage to get to the top, you will move to the next level, where the average speed of the zombies will have increased slightly.
 
+If at any time you colide with a zombie, you will be moved to the **game over** screen. Here you can choose to restart the game from level 1 by pressing **s** or quit the game by pressing **n**.
 
 ![lost_screen](prints/lost_screen.png)
+
+You can quit the game at any time by pressing the **ESC** key.
