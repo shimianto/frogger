@@ -1,6 +1,6 @@
 # Frogger (GoT)
 
-This a simple Frogger like game developed as an exercise to coding and software development.
+This a simple frogger-like game developed as an exercise to coding and software development.
 Using the Allegro library and basic concepts of the C programing language, 
 this project was developed as an introduction me to the many aspects of programing. 
 It contains some simple concepts such as file management, frame refresh rate, input keyboard commands, and others.
@@ -38,9 +38,19 @@ and for Windows:
 frogger
 ```
 
-It should be noted that, altough these steps should work on any platform, this program was tested on MacOS only.
+It should be noted that, although these steps should work on any platform, this program was tested on MacOS only.
 
 
 ## Authors
 
 * **Arthur de Senna Rocha** - [asrocha95](https://github.com/asrocha95)
+
+# How to play
+
+## Choosing your character
+
+As soon as you start the game, you should be directed to a character selection screen. You will have five different possible playable characters to choose from. Simple press the letter that is to the right of your chosen character's name and the game will start.
+
+![GitHub Logo](prints/init_screen.png)
+Format: ![Alt Text](prints/init_screen.png)
+
