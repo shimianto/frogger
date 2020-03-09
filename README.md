@@ -41,10 +41,6 @@ frogger
 It should be noted that, although these steps should work on any platform, this program was tested on MacOS only.
 
 
-## Authors
-
-* **Arthur de Senna Rocha** - [asrocha95](https://github.com/asrocha95)
-
 # How to play
 This section consists of a basic walk-trough the game and its basic commands.
 
@@ -69,3 +65,7 @@ If at any time you colide with a zombie, you will be moved to the **game over** 
 ![lost_screen](prints/lost_screen.png)
 
 You can quit the game at any time by pressing the **ESC** key.
+
+# Authors
+
+* **Arthur de Senna Rocha** - [asrocha95](https://github.com/asrocha95)
